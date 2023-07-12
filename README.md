@@ -6,17 +6,20 @@ Custom programming language called HexPrism
 * Easy syntax
 
 ## Some basic syntax in the future works
-### Functions Syntax
+### Some syntax examples
 ```
 operation buildFunction() -> {
   // Your code here
 }
 
-for (1 in 2000) {
+for (1 thru 2000) {
+  // Your code here
+}
+
+set myArray to [1, 2, 3]
+
+for (item thru myArray) {
   // Your code here
 }
 ```
-### Variable Syntax
-```
-set myVariable = 'Hello world'
-```
+
