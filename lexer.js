@@ -93,7 +93,7 @@ const tokenize = (sourceCode) => {
       }
       // Unrecognized character
       else {
-        console.log('Unrecognized character found in source:', src[0]);
+        console.log('Unrecognized character:', src[0]);
         process.exit();
       }
     }
