@@ -1,5 +1,7 @@
 # hexprism-language-made-with-js
 ## -- Work in Progress --
+I have learned these skills through multiple documentation resources, as well as videos.
+
 Custom programming language called HexPrism
 * Dynamically typed
 * High level language
