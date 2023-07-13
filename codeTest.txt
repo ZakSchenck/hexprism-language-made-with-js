@@ -1,5 +1,1 @@
-set abc = 45;
-
-operation myTask() -> {
-
-}
+set abc = 45

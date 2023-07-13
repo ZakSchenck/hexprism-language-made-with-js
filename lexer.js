@@ -103,7 +103,7 @@ const tokenize = (sourceCode) => {
 };
 
 // Read source code from test.txt file
-const source = fs.readFileSync('./test.txt', 'utf8');
+const source = fs.readFileSync('./codeTest.txt', 'utf8');
 // Tokenize the source code and log each token
 for (const token of tokenize(source)) {
   console.log(token);
