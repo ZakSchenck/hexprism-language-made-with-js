@@ -1,4 +1,3 @@
-const fs = require('fs');
 
 // Custom tokens in HexPrism
 const TokenType = {
@@ -9,6 +8,7 @@ const TokenType = {
   OpenParen: 4,
   CloseParen: 5,
   BinaryOperator: 6,
+  EndOfFile: 7,
 };
 
 // Keyword dictionary
@@ -99,18 +99,12 @@ const tokenize = (sourceCode) => {
     }
   }
 
+  tokens.push({ type: TokenType.EndOfFile, value: "EndOfFile" });
   return tokens;
 };
 
-// Read source code from test.txt file
-const source = fs.readFileSync('./codeTest.txt', 'utf8');
-// Tokenize the source code and log each token
-for (const token of tokenize(source)) {
-  console.log(token);
-}
-
-
-module.exports = {
+export {
   TokenType,
-  tokenize
-}
+  tokenize,
+  token,
+};

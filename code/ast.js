@@ -9,12 +9,12 @@ const node = [
   ];
   
   const Statement = {
-    kind: null
+    kind: null,
   };
   
   const Program = {
     kind: "Program",
-    body: []
+    body: [],
   };
   
   const Expression = {};
@@ -23,16 +23,25 @@ const node = [
     kind: "BinaryExpression",
     left: Expression,
     operator: Expression,
-    right: Expression
+    right: Expression,
   };
   
   const Identifier = {
     kind: "Identifier",
-    symbol: ""
+    symbol: "",
   };
   
   const NumericLiteral = {
     kind: "NumericLiteral",
-    value: 0
+    value: 0,
+  };
+  
+  export {
+    Statement,
+    Program,
+    Expression,
+    BinaryExpression,
+    Identifier,
+    NumericLiteral,
   };
   
